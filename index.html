@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aqzhol Esmuhan</title>
+    <link rel="script" href="main.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#main" class="logo">AQZHOL</a>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#media">Media</a>
+            <a href="#contacts">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="main">
+        <canvas id="particles"></canvas>
+        <canvas id="waves"></canvas>
+        <div class="hero-content">
+
+            <div class="hero-quote fade-in">
+                Веб-разработка — это не просто код, а искусство.
+            </div>
+
+            <div class="about-content" id="main">
+                <div class="about-text">
+                    <div class="bio">
+                        <p>Меня зовут
+                            <span class="name-gradient">Акжол Есмухан</span> и я создаю 
+                             цифровые решения, которые сочетают эстетику и функциональность
+                        </p>
+                    <div class="skills-list">
+                        <p>Что я умею</p>
+                        <ul>
+                            <li>◈ HTML5/CSS3 </li>
+                            <li>◈ MySQL/SQLite</li>
+                            <li>◈ Python</li>
+                            <li>◈ Version Control (Git, GitHub)</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="about-visual">
+                    <div class="photo-frame">
+                        <img src="pics/ebalo.jpeg" alt="Aqzhol Esmuhan" class="profile-photo">
+                    </div>
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Актобе, Казахстан</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>1+ лет опыта</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="projects-text">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Игра 2048</h3>
+                    <p>Сделал игру 2048 на Python</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Первый Pet-проект</h3>
+                    <p>Написал свой сайт-портфолио</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">HTML</span>
+                        <span class="tech-item">CSS</span>
+                        <span class="tech-item">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Верстка Google</h3>
+                    <p>Верстка главной страницы Google</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">HTML</span>
+                        <span class="tech-item">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="achievements" id="achievements">
+    <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-grid">
+            <!-- card 1 -->
+            <div class="achievement-card">
+                <div class="achievement-image">
+                    <img src="pics/winner.jpeg" alt="Achievement 1">
+                </div>
+                <div class="achievement-content">
+                    <h3>Лучший идея</h3>
+                    <p>Победитель областного конкурса 2023</p>
+                    <div class="achievement-tech">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="achievement-card">
+                <div class="achievement-image">
+                    <img src="pics/second.jpeg" alt="Achievement 2">
+                </div>
+                <div class="achievement-content">
+                    <h3>Призер хакатона</h3>
+                    <p>Занял второе место на <br>HACKATHON AQ2BE</p>
+                    <div class="achievement-tech">
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="achievement-card">
+                <div class="achievement-image">
+                    <img src="pics/CS50P.png" alt="Achievement 3">
+                </div>
+                <div class="achievement-content">
+                    <h3>Гордость колледжа</h3>
+                    <p>Прошел курсы от Harvard CS50P</p>
+                    <div class="achievement-tech">
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="socials" id="media">
+    <div class="container">
+        <h2 class="socials-text">Media</h2>
+        <div class="socials-grid">
+            <!-- GitHub -->
+            <a href="https://github.com/aqzhoool" target="_blank" class="social-card github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/aqzhoool" target="_blank" class="social-card instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <!-- google -->
+            <a href="https://wa.me/77087105003" class="social-card whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>Whatsapp</span>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@.aqzhol?lang=ru-RU" target="_blank" class="social-card tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contacts">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        
+        <!-- Форма обратной связи -->
+        <form class="contact-form" action="https://formspree.io/f/mvgkpwgo" method="POST">
+            <!-- Скрытое поле для защиты от спама -->
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your Name" 
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Your Email" 
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <textarea 
+                    name="message" 
+                    placeholder="Your Message" 
+                    rows="5" 
+                    required
+                ></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                Send Message
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+
+        <div class="form-alert"></div>
+    </div>
+</section>
+
+<script>
+document.querySelector('.contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const alert = document.querySelector('.form-alert');
+    alert.textContent = 'Sending...';
+    alert.style.display = 'block';
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if(response.ok) {
+            alert.textContent = 'Message sent successfully!';
+            alert.style.color = '#2ecc71';
+            form.reset();
+        } else {
+            alert.textContent = 'Error sending message';
+            alert.style.color = '#e74c3c';
+        }
+    } catch(error) {
+        alert.textContent = 'Network error, try again later';
+        alert.style.color = '#e74c3c';
+    }
+    
+    setTimeout(() => {
+        alert.style.display = 'none';
+    }, 5000);
+});
+</script>
+<style>
+.form-alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    display: none;
+    text-align: center;
+    font-weight: 500;
+}
+</style>
+
+<div class="image-modal" id="imageModal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<footer class="student-footer">
+    <div class="footer-content">
+        <div class="footer-copyright">
+            <p>© 2025 Собрано с ❤️ и слишком большим количеством кофе</p>
+            <p>v1.0.0-alpha (надеюсь, ничего не упало)</p>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close-btn');
+    
+        // handler for all img
+        document.querySelectorAll('.achievement-image img').forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImg.src = img.src;
+                document.body.style.overflow = 'hidden'; // block scroll
+            });
+        });
+    
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    
+        // close when missclicked
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+    </script>
+</body>
+</html>

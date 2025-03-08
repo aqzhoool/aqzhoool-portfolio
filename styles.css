@@ -188,14 +188,18 @@ section {
         padding-top: 2.5rem;
     }
 
+    .burger {
+        display: block; /* Показываем на мобиле */
+    }
+
     .nav-links {
         position: fixed;
+        top: 70px;
         right: -100%;
-        top: 80px;
-        height: calc(100vh - 80px);
+        width: 100%;
+        height: calc(100vh - 70px);
         background: rgba(10, 10, 10, 0.98);
         flex-direction: column;
-        width: 100%;
         padding: 2rem;
         transition: right 0.5s ease;
         backdrop-filter: blur(10px);
@@ -205,24 +209,15 @@ section {
         right: 0;
     }
 
-    .nav-links a {
-        font-size: 1.5rem;
-        padding: 1rem 0;
+    /* Анимация бургера */
+    .burger.active .burger-line:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 6px);
     }
-
-    .burger {
-        display: block;
-    }
-
-    /* burger anim */
-    .burger.active .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .burger.active .line2 {
+    .burger.active .burger-line:nth-child(2) {
         opacity: 0;
     }
-    .burger.active .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+    .burger.active .burger-line:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -6px);
     }
 
     .about-content {
@@ -1190,15 +1185,19 @@ h3 {
 }
 
 .burger {
-    display: none;
+    display: none; /* Скрыто на десктопе */
+    background: none;
+    border: none;
+    padding: 10px;
     cursor: pointer;
     z-index: 1001;
 }
 
-.burger div {
+.burger-line {
+    display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--primary);
-    margin: 5px;
+    background: #fff;
+    margin: 5px 0;
     transition: all 0.3s ease;
 }

@@ -35,22 +35,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const toggleMenu = () => {
         burger.classList.toggle('active');
         navLinks.classList.toggle('active');
-        navOverlay.classList.toggle('active');
-        document.body.classList.toggle('nav-open');
+        document.body.classList.toggle('no-scroll');
     };
-
-    burger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        toggleMenu();
+    
+    // Добавьте закрытие меню при клике на ссылки
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            if(window.innerWidth <= 768) closeMenu();
+        });
     });
-
-    // Close menu
-    const closeMenu = () => {
-        burger.classList.remove('active');
-        navLinks.classList.remove('active');
-        navOverlay.classList.remove('active');
-        document.body.classList.remove('nav-open');
-    };
 
     // Close on overlay click
     navOverlay.addEventListener('click', closeMenu);

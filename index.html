@@ -20,25 +20,23 @@
         <div class="wave"></div>
     </div>
 
-    <nav class="navbar">
-        <!-- Логотип -->
-        <a href="#main" class="logo">AQZHOL</a>
-        
-        <!-- Бургер-кнопка (добавьте это) -->
-        <button class="burger" aria-label="Меню">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </button>
+<nav class="navbar">
+    <!-- Логотип -->
+    <a href="#main" class="logo">AQZHOL</a>
     
-        <!-- Ссылки меню -->
-        <div class="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#media">Media</a>
-            <a href="#contacts">Contact</a>
-        </div>
-    </nav>
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger">
+        <span class="burger-line"></span>
+    </label>
+    
+    <div class="nav-links">
+        <!-- Ваши ссылки -->
+        <a href="#projects" style="--i: 1">Projects</a>
+        <a href="#achievements" style="--i: 2">Achievements</a>
+        <a href="#media" style="--i: 3">Media</a>
+        <a href="#contacts" style="--i: 4">Contact</a>
+    </div>
+</nav>
 
     <section class="hero" id="main">
         <canvas id="particles"></canvas>

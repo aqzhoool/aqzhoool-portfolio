@@ -498,7 +498,7 @@ section {
   }
 
 /* 400px и меньше */
-@media (max-width: 400px) {
+@media (max-width: 428px) {
     /* Настройка основного контента */
     .container {
       padding: 1rem !important;

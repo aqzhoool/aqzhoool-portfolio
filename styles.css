@@ -160,199 +160,10 @@ section {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .logo {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    
-    .nav-links a:hover {
-        background: rgba(255,255,255,0.1);
-        transform: translateX(5px);
-    }
-    
-    body {
-        padding-top: 0 !important;
-    }
-    
-    section {
-        padding-bottom: 2rem;
-    }
-
-    .about-visual {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-    }
-
-    .bio {
-        padding-top: 2.5rem;
-    }
-
-    .nav-links {
-        position: fixed;
-        right: -100%;
-        top: 80px;
-        height: calc(100vh - 80px);
-        background: rgba(10, 10, 10, 0.98);
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-        transition: right 0.5s ease;
-        backdrop-filter: blur(10px);
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links a {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-    }
-
-    .about-content {
-        flex-direction: column;
-        padding-top: 4rem;
-    }
-    
-    .hero {
-        padding-top: 6rem !important;
-        margin-left: 0 !important;
-    }
-    
-    .hero-content {
-        padding: 4rem 0 !important;
-    }
-    
-    .skills-list li {
-        font-size: 0.9rem;
-    }
-    
-    .additional-info span {
-        font-size: 0.8rem;
-    }
-
-}
-
-
 @media (min-width: 769px) {
     .nav-links {
         display: flex !important;
     }
-}
-
-.burger-checkbox {
-    display: none;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-    z-index: 1001;
-    width: 40px;
-    height: 30px;
-    position: relative;
-}
-
-.burger-line {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: var(--primary);
-    transition: all 0.3s ease;
-}
-
-.burger-line::before,
-.burger-line::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    transition: inherit;
-}
-
-.burger-line::before {
-    transform: translateY(-10px);
-}
-
-.burger-line::after {
-    transform: translateY(10px);
-}
-
-/* Анимация при открытии */
-#burger-checkbox:checked ~ .burger .burger-line {
-    background: transparent;
-}
-
-#burger-checkbox:checked ~ .burger .burger-line::before {
-    transform: rotate(45deg);
-}
-
-#burger-checkbox:checked ~ .burger .burger-line::after {
-    transform: rotate(-45deg);
-}
-
-/* Показываем/скрываем меню */
-@media (max-width: 560px) {
-    .burger {
-        display: block;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        right: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: rgba(10, 10, 10, 0.98);
-        flex-direction: column;
-        padding: 2rem;
-        transition: right 0.4s ease;
-        backdrop-filter: blur(10px);
-    }
-
-    #burger-checkbox:checked ~ .nav-links {
-        right: 0;
-    }
-
-    .nav-links a {
-        opacity: 0;
-        transform: translateX(20px);
-        transition: all 0.3s ease;
-    }
-
-    #burger-checkbox:checked ~ .nav-links a {
-        opacity: 1;
-        transform: translateX(0);
-        transition-delay: calc(0.1s * var(--i));
-    }
-
-    /* Анимация бургера */
-    #burger-checkbox:checked ~ .burger .burger-line {
-        background: transparent;
-    }
-
-    #burger-checkbox:checked ~ .burger .burger-line::before {
-        transform: rotate(45deg);
-    }
-
-    #burger-checkbox:checked ~ .burger .burger-line::after {
-        transform: rotate(-45deg);
-    }
-}
-
-/* Анимация для ссылок */
-.nav-links a {
-    opacity: 0;
-    transform: translateX(20px);
-    transition: all 0.3s ease;
-}
-
-#burger-checkbox:checked ~ .nav-links a {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: calc(0.1s * var(--i));
 }
 
 .navbar {
@@ -369,10 +180,6 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
 
 .nav-links a {
     color: var(--primary);
@@ -459,9 +266,10 @@ section {
 
 .bio p {
     font-size: 2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    opacity: 1;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    opacity: 2;
 }
 
 .skills-list {
@@ -565,159 +373,8 @@ section {
     li {
       font-size: 0.8rem;
     }
-    .hero h1 {
-        font-size: 3rem !important;
-    }
-    
-    .hero p {
-        font-size: 1.2rem !important;
-    }
-    
-    .project-card h3 {
-        font-size: 1.2rem;
-    }
-    
-    .bio p {
-        font-size: 1.1rem !important;
-        line-height: 1.4;
-    }
-    
-    .photo-frame {
-        width: 250px !important;
-        height: 250px !important;
-        margin-top: -4rem !important;
-    }
-    
-    .hero-quote {
-        font-size: 1.5rem !important;
-        margin-right: 0 !important;
-        padding: 0 1rem !important;
-    }
-
   }
 
-/* 400px и меньше */
-@media (max-width: 428px) {
-    /* Настройка основного контента */
-    .container {
-      padding: 1rem !important;
-    }
-  
-    /* Герой-секция */
-    .hero {
-      padding-top: 5rem !important;
-      margin-left: 0 !important;
-    }
-  
-    .hero-quote {
-      font-size: 1.2rem !important;
-      margin: 0 auto 2rem !important;
-      max-width: 90% !important;
-    }
-  
-    .bio p {
-      font-size: 1rem !important;
-      line-height: 1.3;
-      text-align: center;
-    }
-  
-    /* Карточка с фото */
-    .photo-frame {
-      width: 200px !important;
-      height: 200px !important;
-      margin-top: -2rem !important;
-    }
-  
-    /* Навыки */
-    .skills-list li {
-      font-size: 0.8rem !important;
-      padding: 0.5rem 0 !important;
-    }
-  
-    /* Проекты */
-    .project-grid {
-      grid-template-columns: 1fr !important;
-      gap: 1rem;
-    }
-  
-    .project-card {
-      padding: 1rem;
-    }
-  
-    /* Достижения */
-    .achievements-grid {
-      grid-template-columns: 1fr !important;
-    }
-  
-    .achievement-card {
-      padding: 1rem;
-    }
-  
-    /* Социальные сети */
-    .socials-grid {
-      grid-template-columns: repeat(2, 1fr) !important;
-    }
-  
-    .social-card {
-      height: 120px !important;
-      padding: 1rem !important;
-    }
-  
-    .social-card i {
-      font-size: 2rem !important;
-    }
-  
-    /* Форма */
-    .contact-form input,
-    .contact-form textarea {
-      padding: 0.8rem !important;
-      font-size: 14px !important;
-    }
-  
-    .submit-btn {
-      padding: 0.8rem !important;
-      font-size: 14px !important;
-    }
-  
-    /* Футер */
-    .footer-copyright p {
-      font-size: 0.7rem !important;
-    }
-  
-    /* Навигация */
-    .nav-links {
-      top: 60px !important;
-      height: calc(100vh - 60px) !important;
-    }
-  
-    .navbar {
-      height: 60px !important;
-      padding: 0 1rem !important;
-    }
-  
-    .logo {
-      font-size: 1.5rem !important;
-    }
-  }
-  
-  /* 340px (очень маленькие экраны) */
-  @media (max-width: 340px) {
-    .hero-quote {
-      font-size: 1rem !important;
-    }
-  
-    .skills-list li {
-      font-size: 0.7rem !important;
-    }
-  
-    .social-card {
-      height: 100px !important;
-    }
-  
-    .social-card span {
-      font-size: 0.9rem !important;
-    }
-}
 .disolve-text span {
     opacity: 0;
     animation: letterDisolve 1.2s forwards;
@@ -844,7 +501,8 @@ section {
 }
 
 .bio p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
 }
 
 .logo {
@@ -1017,7 +675,7 @@ body.no-scroll {
     margin-right: 8rem;
     font-style: italic;
     position: relative;
-    padding: 0 2rem;
+    padding: 2rem;
     text-align: center;
     max-width: 600px;
     margin-right: auto;
@@ -1029,6 +687,7 @@ body.no-scroll {
     color: var(--accent);
     font-size: 1.8rem;
     position: absolute;
+    padding: 1.2rem;
 }
 
 .hero-quote::before {
@@ -1129,29 +788,27 @@ body {
 h2 {
     font-size: 1.5rem;
     margin: 1rem 0;
-  }
+}
   
-  h3 {
-    font-size: 1.3rem;
-    margin: 0.8rem 0;
-  }
-  
-  /* Списки навыков */
-  ul {
-    padding-left: 1.2rem;
-    margin: 0.8rem 0;
-  }
-  
-  li {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  /* Блок с локацией */
-  p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-  }
+h3 {
+font-size: 1.3rem;
+margin: 0.8rem 0;
+}
+
+ul {
+padding-left: 1.2rem;
+margin: 0.8rem 0;
+}
+
+li {
+margin-bottom: 0.5rem;
+font-size: 0.9rem;
+}
+
+p {
+margin: 0.5rem 0;
+font-size: 0.9rem;
+}
 
   .wave-background {
     position: fixed;
@@ -1209,7 +866,6 @@ h2 {
     }
 }
 
-/* Адаптация для мобильных */
 @media (max-width: 768px) {
     .wave {
         height: 8rem;
@@ -1289,4 +945,332 @@ h3 {
 }
 
 
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    position: static;
+    height: auto;
+    width: auto;
+    background: transparent;
+    backdrop-filter: none;
+    padding: 0;
+}
 
+.nav-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 2rem;
+        transition: right 0.4s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-links a {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+}
+
+.navbar {
+    justify-content: flex-start; 
+}
+
+.logo {
+    order: 1; 
+}
+
+.nav-links {
+    order: 3; 
+}
+
+@media (max-width: 560px) { 
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 2rem;
+        transition: right 0.4s ease;
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-quote {
+        font-size: 1.8rem !important;
+        margin: 0 0 1.5rem !important;
+        padding: 2rem;
+        line-height: 1.3;
+    }
+
+    .bio {
+        align-items: center;
+    }
+    
+    .bio p {
+        font-size: 1.5rem ;
+        margin: 0 0 1.5rem ;
+        padding: 0 1rem;
+        line-height: 1.3;
+    }
+
+    .additional-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        background: rgba(255,255,255,0.05);
+        border-radius: 15px;
+        font-size: 0.9rem;
+        gap: 1rem;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 280px;
+        transition: transform 0.3s ease;
+    }
+
+    .info-item i {
+        font-size: 1.2rem;
+        min-width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(108, 99, 255, 0.15);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: var(--accent);
+        transition: all 0.3s ease;
+    }
+
+    .socials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    .social-card {
+        height: 60px !important;
+        padding: 1rem !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .social-card i {
+        font-size: 1.5rem !important;
+        margin: 0;
+    }
+
+    .social-card span {
+        font-size: 0.9rem !important;
+    }
+
+    .container {
+        padding: 1rem !important;
+    }
+
+    .hero-content {
+        padding: 2rem 0 !important;
+    }
+    .logo {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255,255,255,0.1);
+        transform: translateX(5px);
+    }
+
+    body {
+        padding-top: 0 !important;
+    }
+
+    section {
+        padding-bottom: 2rem;
+    }
+
+    .about-visual {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .bio {
+        padding-top: 2.5rem;
+    }
+
+    .hero-quote {
+        font-size: 2rem !important;
+        margin: 0 0 1.5rem !important;
+        padding: 1rem;
+        line-height: 1.3;
+        }
+}
+
+    @media (max-width: 340px) {
+    .info-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .social-card {
+        height: 50px !important;
+    }
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger-container {
+    display: none;
+}
+
+.burger {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    left: 7px;
+    top: -12px;
+    font-size: 40px;
+    color: var(--primary);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+#burger-toggle:checked ~ .burger-container .close-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#burger-toggle:checked ~ .burger-container .burger {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.burger-line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--primary);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+.burger-line::before,
+.burger-line::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transition: inherit;
+}
+
+.burger-line::before {
+    transform: translateY(-10px);
+}
+
+.burger-line::after {
+    transform: translateY(10px);
+}
+
+#burger-toggle:checked ~ .burger .burger-line {
+    background: transparent;
+}
+
+#burger-toggle:checked ~ .burger .burger-line::before {
+    transform: rotate(45deg) translateY(0);
+}
+
+#burger-toggle:checked ~ .burger .burger-line::after {
+    transform: rotate(-45deg) translateY(0);
+}
+
+@media (max-width: 768px) {
+    .burger-container {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    .burger {
+        display: block;
+        margin-bottom: .6rem;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 80px 2rem 2rem;
+        transition: left 0.4s ease;
+        backdrop-filter: blur(10px);
+        z-index: 999;
+    }
+    
+    #burger-toggle:checked ~ .nav-links {
+        left: 0;
+    }
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(10, 10, 10, 0.98);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s;
+}

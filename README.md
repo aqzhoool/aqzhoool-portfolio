@@ -25,9 +25,3 @@
 - **Адаптивность**: Media Queries, Flexbox, Grid
 - **Инструменты**: GitHub Pages, Formspree (для форм)
 - **Оптимизация**: Critical CSS, Lazy Loading
-
-## ⚡️ Быстрый старт
-
-1. Клонируйте репозиторий:
-```bash
-git clone https://github.com/yourusername/yourrepository.git

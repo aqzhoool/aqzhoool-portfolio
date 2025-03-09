@@ -20,23 +20,24 @@
         <div class="wave"></div>
     </div>
 
-<nav class="navbar">
-    <!-- Логотип -->
-    <a href="#main" class="logo">AQZHOL</a>
+    <nav class="navbar">
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <div class="burger-container">
+            <label for="burger-toggle" class="burger">
+                <span class="burger-line"></span>
+            </label>
+            <div class="close-btn">×</div>
+        </div>
+        
+        <a href="#main" class="logo">AQZHOL</a>
     
-    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-    <label for="burger-checkbox" class="burger">
-        <span class="burger-line"></span>
-    </label>
-    
-    <div class="nav-links">
-        <!-- Ваши ссылки -->
-        <a href="#projects" style="--i: 1">Projects</a>
-        <a href="#achievements" style="--i: 2">Achievements</a>
-        <a href="#media" style="--i: 3">Media</a>
-        <a href="#contacts" style="--i: 4">Contact</a>
-    </div>
-</nav>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#media">Media</a>
+            <a href="#contacts">Contact</a>
+        </div>
+    </nav>
 
     <section class="hero" id="main">
         <canvas id="particles"></canvas>
@@ -57,10 +58,10 @@
                     <div class="skills-list">
                         <p>Что я умею</p>
                         <ul>
-                            <li>◈ HTML5/CSS3 </li>
-                            <li>◈ MySQL/SQLite</li>
-                            <li>◈ Python</li>
-                            <li>◈ Version Control (Git, GitHub)</li>
+                            <li>HTML5/CSS3 </li>
+                            <li>MySQL/SQLite</li>
+                            <li>Python</li>
+                            <li>Version Control (Git, GitHub)</li>
                         </ul>
                     </div>
                     </div>
@@ -129,7 +130,7 @@
                     <img src="pics/winner.jpeg" alt="Achievement 1">
                 </div>
                 <div class="achievement-content">
-                    <h3>Лучший идея</h3>
+                    <h3>Лучшая идея</h3>
                     <p>Победитель областного конкурса 2023</p>
                     <div class="achievement-tech">
 
@@ -203,9 +204,9 @@
     <div class="container">
         <h2 class="section-title">Get in Touch</h2>
         
-        <!-- Форма обратной связи -->
+        <!-- feedback form -->
         <form class="contact-form" action="https://formspree.io/f/mvgkpwgo" method="POST">
-            <!-- Скрытое поле для защиты от спама -->
+            <!-- spam protection -->
             <input type="text" name="_gotcha" style="display:none">
             
             <div class="form-group">
@@ -306,6 +307,7 @@ document.querySelector('.contact-form').addEventListener('submit', async (e) => 
     </div>
 </footer>
 
+<script src="burger.js"></script>
 <script src="main.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {

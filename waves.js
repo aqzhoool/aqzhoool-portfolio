@@ -16,7 +16,7 @@ class WaveBackground {
     }
   
     init() {
-      // Создание волн
+      // creating wave
       for(let i = 0; i < 3; i++) {
         this.waves.push({
           amplitude: 50 + Math.random() * 100,
